@@ -11,7 +11,6 @@ async function getData<T>() {
 		throw new Error("Failed to fetch products")
 	}
 
-	// You can return Date, Map, Set, etc.
 	return res.json() as T
 }
 
